@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Bulalo</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+    
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 13px;
+        margin-left: 13%;
+        margin-right: 10%;
+        margin-top: 5%;
+        color:grey;
+        font-family: 'FreeMono', monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+        <h1><img src="LOGO3.png" style="height: 300px;" width="500px;"></h1>
+    </div>
+    
+    
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="recipe.html">Recipe</a>
+  <a href="About.html">About</a>
+  <a href="Contact us.html">Send Recipe</a>
+  <a href="Find.html" class="right">Find Recipe</a>
+</div>
+
+
+    <div class="header2">
+        <h2 style="font-size:70px; font-family: Bellefair; text-align: center; font-weight: 200px; color:white; margin-top: 5px;" >Bulalo</h2>
+    </div>
+
+
+    <div class="container">
+        <div class="image">
+          <img src="Bulalo.jpg" style=" height:500px; width: 700px; margin-top: 10%; margin-left: 20%;">
+          <img src="bulalostep.jpg" style=" height:500px; width: 700px; margin-top: 10%; margin-left: 20%;">
+        </div>
+        <div class="text">
+          <h1> Bulalo is a beef dish from the Philippines. It is a light colored soup that is made by cooking beef shanks and bone marrow until the collagen and fat has melted into the clear broth that isperfect for rainy season.</h1>
+              <h1 style="text-align: center;">Ingredients</h1>
+                  
+          <ul>
+              <li style="font-size: large;">1 kilo beef, bone-in</li>
+              <li style="font-size: large;">water</li>
+              <li style="font-size: large;">1 medium onion, peeled and quartered</li>
+              <li style="font-size: large;">2 tablespoons fish sauce (patis)</li>
+              <li style="font-size: large;">1 table spoon peppercorns</li>
+              <li style="font-size: large;">3 pieces corn, husked and cut into 3 pieces</li>
+              <li style="font-size: large;">1 bunch pechay leaves, leaves separated</li>
+              <li style="font-size: large;">1 head cabbage, (small, cut into 6 pieces)</li>
+              <li style="font-size: large;">salt</li>
+          </ul>
+          
+          <h1 style="text-align: center;">Procedure</h1>
+      <p style="font-size: large;">Step 1: In a large pot over medium heat, put the beef shanks and add water to cover the meat. Boil for about 10 minutes, skimming scum that accumulates on top. Remove meat from water and wash under cold water to remove impurities. Discard liquid and rinse pot.</p> 
+      <p style="font-size: large;">Step 2: Return the meat and add enough water to cover the meat. Bring to a boil. Remove  the scum from time to time. Once the broth is clear, add onions, fish sauce, and peppercorns.</p>
+      <p style="font-size: large;">Step 3: Lower the heat, cover and let it simmer for 3 hours or until meat is fork tender.</p>
+      <p style="font-size: large;">Step 4: Add corn and simmer for 20 minutes. Season with salt to taste. Add the pechay and cabbage and cook for about 2 to 3 minutes.</p>  
+      <p style="font-size: large;">Step 5: Serve and Satisfy your cravings!</p>    
+  
+              
+        </div>
+      </div>
+
+
+
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  
+  </script>
+
+<div class="footer">
+    <h2 style="color:lightslategrey; font-size: small;">copywrite foodblog website 2021-2022 all rights reserved craving's hub</h2>
+    
+  </div>
+  
+  </body>
+  </html>

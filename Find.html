@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b45e3950fe.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Find Recipe</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box{
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top:-1%;
+    background-image: url('pap.jpg');
+    background-size: auto;
+    border: 15px solid grey;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+ }
+
+
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 3%;
+  margin-top: 5%;
+  margin-left: 25%;
+  border-radius: 10px;
+  
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a {
+  border: 1px solid transparent;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: transparent;
+  padding: 12px;
+  text-decoration: none;
+  font-family: 'FreeMono', monospace;
+  font-size: 25px;
+  color: black;
+  display: block;
+  width: 50%;
+  margin-left: 25%;
+ 
+
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: white;
+}
+</style>
+</head>
+<body>
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1><img src="LOGO3.png" style="height: 300px;" width="500px;"></h1>
+</div>
+
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="recipe.html">Recipe</a>
+  <a href="About.html">About</a>
+  <a href="Contact us.html">Send Recipe</a>
+  <a href="Find.html" class="right">Find Recipe</a>
+</div>
+
+<div class="header2">
+    <h2 style="font-size:70px; font-family: Bellefair; text-align: center; font-weight: 200; color:white; margin-top: 5px;" >Find Recipe</h2>
+    <p style="font-size:x-large; font-family: Bellefair; text-align: center; margin-right: 50px; margin-left:50px; margin-top: -3%; color:white;"> We organized the recipe's in alphabetically order so that you can find it quickly.</p> 
+    </div>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for recipe" title="Type in a name">
+
+    <div class="box">
+      <ul id="myUL" style="margin-top:5%;">
+        <li><a href="Avocado.html">Avocado Toast</a></li>
+        <li><a href="Bulalo.html">Bulalo</a></li>
+        <li><a href="Chopsuey.html">Chapsuey</a></li>
+    
+        <li><a href="CheeseBurger.html">Cheese Burger</a></li>
+        <li><a href="Corndog.html">Corn Dog</a></li>
+        <li><a href="eggbenedict.html">Egg Benedict</a></li>
+    
+        <li><a href="pancake.html">Fluffy Pancake</a></li>
+        <li><a href="Ginataang Alimasag.html">Ginataang Alimasag</a></li>
+        <li><a href="mini pizza.html">Mini Pizza Cheese Bacon</a></li>
+        <li><a href="Sinigang.html">Pork Sinigang</a></li>
+        <li><a href="Sizzling Sisig.html">Sizzling Sisig</a></li>
+        <li><a href="Tuyo pasta.html">Tuyo Pasta</a></li>
+    
+      </ul>
+    </div>
+    
+
+
+
+<div class="footer" style="margin-top: 5%;">
+  <h2 style="color:lightslategrey; font-size: small;">copywrite foodblog website 2021-2022 all rights reserved craving's hub</h2>
+</div>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

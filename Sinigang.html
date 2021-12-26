@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sinigang</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+    
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 13px;
+        margin-left: 13%;
+        margin-right: 10%;
+        margin-top: 5%;
+        color:grey;
+        font-family: 'FreeMono', monospace;
+      }
+
+
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><img src="LOGO3.png" style="height: 300px;" width="500px;"></h1>
+    </div>
+    
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="recipe.html">Recipe</a>
+      <a href="About.html">About</a>
+      <a href="Contact us.html">Send Recipe</a>
+      <a href="Find.html" class="right">Find Recipe</a>
+    </div>
+      
+    </div>
+
+    <div class="header2">
+        <h2 style="font-size:70px; font-family: Bellefair; text-align: center; font-weight: 200px; color:white; margin-top: 5px;" >Sinigang</h2>
+    </div>
+
+
+    <div class="container">
+        <div class="image">
+          <img src="sinigang.png" style=" height:500px; width: 700px; margin-top: -30%; margin-left: 20%;">
+          <img src="cooksinigang.jpg" style=" height:500px; width: 700px; margin-top: 10%; margin-left: 20%;">
+        </div>
+        <div class="text">
+          <h1>Sinigang is a classic Filipino soup characterized by its sour and savory medley of flavors. It’s popular comfort food in the Philippines,  usually served on its own or paired with steamed rice on rainy days to ward off the cold.</h1>
+              <h1 style="text-align: center;">Ingredients</h1>
+                  
+          <ul>
+              <li style="font-size: large;">1 Liter water</li>
+              <li style="font-size: large;">500 g pork spare rib cut into chunks</li>
+              <li style="font-size: large;">30 g red onion, quartered</li>
+              <li style="font-size: large;">350 g medium sized tomato, quartered</li>
+              <li style="font-size: large;">8 pcs sitaw, sliced into 2” pieces</li>
+              <li style="font-size: large;">250 g kangkong stalk and leaves</li>
+              <li style="font-size: large;">250 g talong, sliced</li>
+              <li style="font-size: large;">2 pcs siling pangsigang</li>
+              <li style="font-size: large;">1 pack Knorr Sinigang sa Sampalok Mix Original or tamarine</li>
+              <li style="font-size: large;">Optional: labanos, okra</li>
+          </ul>
+          
+          <h1 style="text-align: center;">Procedure</h1>
+      <p style="font-size: large;">Step 1: Begin by washing pork spare ribs in cold running water to remove any visible impurities. Then, place pork ribs submerge in a medium pot with a liter of water. Bring to a boil without covering the pot and allow the scum to float to the surface. Meticulously remove the scums from the surface of the water using a slotted spoon or a spatula. Scums are impurities found in meat.</p> 
+      <p style="font-size: large;">Step 2: After the broth clears up, turn you heat to medium setting, then it’s time toss in your onions and tomatoes to add flavor to the broth. Cover your pot and let it simmer to fully cook your meat. Use a fork to pierce the meat so that the flavors would also enter the meaty parts of the spare ribs, You also do this so you can tell if it’s already set and tender.</p>
+      <p style="font-size: large;">Step 3: You can already add your vegetables. Start by adding the sitaw, kangkong stalks and talong into the pot and cook until these turn dark green. If you decide to use labanos and okra, you can also add those at this point. This should take roughly around 2-3 minutes.</p>  
+      <p style="font-size: large;">Step 4: Add in your siling sigang, kangkong leaves and the Knorr Sinigang sa Sampaloc Mix. Stir and let it simmer. It should be done in about 2-3 minutes.</p>
+      <p style="font-size: large;">Step 5: Serve and Satisfy your cravings!</p>      
+  
+              
+        </div>
+      </div>
+
+
+
+</div>
+
+
+<div class="footer">
+    <h2 style="color:lightslategrey; font-size: small;">copywrite foodblog website 2021-2022 all rights reserved craving's hub</h2>
+    
+  </div>
+  
+  <script>
+    window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  </body>
+  </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Sizzling Sisig</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+    
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 13px;
+        margin-left: 13%;
+        margin-right: 10%;
+        margin-top: 5%;
+        color:grey;
+        font-family: 'FreeMono', monospace;
+      }
+
+
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><img src="LOGO3.png" style="height: 300px;" width="500px;"></h1>
+    </div>
+    
+    <div id="navbar">
+      <a href="Craving hub.html">Home</a>
+      <a href="recipe.html">Recipe</a>
+      <a href="About.html">About</a>
+      <a href="Contact us.html">Send Recipe</a>
+      <a href="Find.html" class="right">Search</a>
+    </div>
+
+    <div class="header2">
+        <h2 style="font-size:70px; font-family: Bellefair; text-align: center; font-weight: 200px; color:white; margin-top: 5px;" >Sizzling Sisig</h2>
+    </div>
+
+
+    <div class="container">
+        <div class="image">
+          <img src="Red-Sisig.jpg" style=" height:500px; width: 700px; margin-top: 10%; margin-left: 20%;">
+          <img src="cookingsisig.jpg" style=" height:500px; width: 700px; margin-top: 10%; margin-left: 20%;">
+
+        </div>
+        <div class="text">
+          <h1>Pork sisig is a popular Filipino dish. It can be considered as a main dish or an appetizer. The composition of this dish is mainly of pig’s parts such as minced pork meat, ears, and face. Chicken liver, onions, and chili peppers are also added.</h1>
+              <h1 style="text-align: center;">Ingredients</h1>
+                  
+          <ul>
+              <li style="font-size: large;">water</li>
+              <li style="font-size: large;">1 kilo pork jowl (face)</li>
+              <li style="font-size: large;">2 tablespoons vegetable oil</li>
+              <li style="font-size: large;">1 large onion, minced</li>
+              <li style="font-size: large;">3 cloves garlic</li>
+              <li style="font-size: large;">1 ginger, minced</li>
+              <li style="font-size: large;">3 pieces finger chilies (siling pangsigang)</li>
+              <li style="font-size: large;">3 tablespoons soy sauce</li>
+              <li style="font-size: large;">3-5 pieces calamansi</li>
+              <li style="font-size: large;">1/4 kilo chicken liver</li>
+              <li style="font-size: large;">salt and pepper, to taste</li>
+          </ul>
+          
+          <h1 style="text-align: center;">Procedure</h1>
+      <p style="font-size: large;">Step 1: In a big pot, place water and bring it to a boil. Water should be enough to cover the meat. Place pig's ears and pork jowl (or pork belly) then simmer for 40 minutes to 1 hour (or until tender). Season with salt and pepper.</p> 
+      <p style="font-size: large;">Step 2: Remove the boiled ingredients from the pot then drain excess water.</p>
+      <p style="font-size: large;">Step 3: Grill the boiled pig's ears and pork jowl (or pork belly) until cooked.</p>  
+      <p style="font-size: large;">Step 4: Chop the pig ears and pork belly into diced pieces.</p>
+      <p style="font-size: large;">Step 5: In a wide pan, heat the oil. Add the onions and cook until translucent.</p>  
+      <p style="font-size: large;">Step 6: Add the ginger, garlic and green finger chilies and saute.</p>  
+      <p style="font-size: large;">Step 7: Add the pig brains or chicken liver. Mash the chicken liver while cooking it in the pan.</p>
+      <p style="font-size: large;">Step 8: Add the chopped pig ears and pork belly. Cook for 10 to 12 minutes.</p>  
+      <p style="font-size: large;">Step 9: Season with soy sauce, salt and pepper.</p>  
+      <p style="font-size: large;">Step 10: Transfer to a serving plate. Top with chopped green finger chilies.</p>   
+      <p style="font-size: large;">Step 11: Serve hot or serve on a hot sizzling plate and Satisfy your cravings!</p>      
+  
+              
+        </div>
+      </div>
+
+
+
+</div>
+
+
+
+<div class="footer">
+    <h2 style="color:lightslategrey; font-size: small;">copywrite foodblog website 2021-2022 all rights reserved craving's hub</h2>
+    
+  </div>
+  
+  <script>
+    window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  </body>
+  </html>

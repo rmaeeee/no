@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Corn Dog</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+    
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 13px;
+        margin-left: 13%;
+        margin-right: 10%;
+        margin-top: 5%;
+        color:grey;
+        font-family: 'FreeMono', monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+        <h1><img src="LOGO3.png" style="height: 300px;" width="500px;"></h1>
+    </div>
+    
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="recipe.html">Recipe</a>
+      <a href="About.html">About</a>
+      <a href="Contact us.html">Send Recipe</a>
+      <a href="Find.html" class="right">Search</a>
+    </div>
+
+    <div class="header2">
+        <h2 style="font-size:70px; font-family: Bellefair; text-align: center; font-weight: 200px; color:white; margin-top: 5px;" >Corn Dog</h2>
+    </div>
+
+
+    <div class="container">
+        <div class="image">
+          <img src="koreancorndog.jpg" style=" height:500px; width: 700px; margin-top: -10%; margin-left: 20%;">
+          <img src="Makecorndog.jpg" style=" height:500px; width: 700px; margin-top: 10%; margin-left: 20%;">
+        </div>
+        <div class="text">
+          <h1>A corn dog is a sausage or hotdogs on a stick that has been coated in a thick layer of cornmeal batter and deep fried that is perfect for snack.</h1>
+              <h1 style="text-align: center;">Ingredients</h1>
+                  
+          <ul>
+              <li style="font-size: large;">1 2/3 cups all-purpose flour, sifted</li>
+              <li style="font-size: large;">2 tablespoons sugar</li>
+              <li style="font-size: large;">2 teaspoons instant dry yeast</li>
+              <li style="font-size: large;">1/2 teaspoon salt</li>
+              <li style="font-size: large;">1 cup water, warmed to around 110 degrees F or 43 degrees C</li>
+              <li style="font-size: large;">3 pieces hotdogs</li>
+              <li style="font-size: large;">1 190-gram pack mozzarella cheese</li>
+              <li style="font-size: large;">yellow mustard, to serve</li>
+              <li style="font-size: large;">1 cup cauliflower, (florets), trimmed</li>
+              <li style="font-size: large;">ketchup, to serve</li>
+              <li style="font-size: large;">oil, for frying</li>
+          </ul>
+          
+          <h1 style="text-align: center;">Procedure</h1>
+      <p style="font-size: large;">Step 1: Make the dough: In a large bowl, combine flour, sugar, instant dry yeast, and salt. Make a well and add water. Using a silicone spatula, mix until a sticky dough is formed. Mix using the spatula for at least 3 minutes up to 5 minutes, until you can stretch the dough about 6 inches before snapping. Transfer and spread the sticky dough into a shallow serving dish that is long. Cover and set aside for 40 minutes or up to 1 hour until risen and doubled in size.  </p> 
+      <p style="font-size: large;">Step 2: In a large deep pan over medium-high heat, heat oil until 350 degrees F or 175 degrees C or for deep frying.</p>
+      <p style="font-size: large;">Step 3: Meanwhile, pat hotdogs dry. Cut each one in half, crosswise. Cut mozzarella into the same width. Starting with the hotdogs, push and twist the skewers through a hotdog. Top it with a mozzarella stick. Repeat until each stick has hotdogs and cheese. </p>
+      <p style="font-size: large;">Step 4: To coat the hotdogs, roll each stick into the sticky dough. If necessary, wrap the dough around any exposed parts of the hotdog or cheese. Immediately roll the dough-wrapped stick into the Panko then place in the hot oil. Repeat with each skewer. </p>  
+      <p style="font-size: large;">Step 5: Fry until golden brown on all sides, rotating the hotdogs to ensure even browning on all sides. Drain on a rack over paper towels. Serve immediately while still warm with ketchup and mustard or sprinkled with sugar. </p>
+      <p style="font-size: large;">Step 6: Serve and Satisfy your cravings!</p>      
+  
+              
+        </div>
+      </div>
+
+
+
+</div>
+
+
+
+<div class="footer">
+    <h2 style="color:lightslategrey; font-size: small;">copywrite foodblog website 2021-2022 all rights reserved craving's hub</h2>
+    
+  </div>
+  
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    
+    </script>
+  </body>
+  </html>

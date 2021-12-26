@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ginataang Alimasag</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+    
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 13px;
+        margin-left: 13%;
+        margin-right: 10%;
+        margin-top: 5%;
+        color:grey;
+        font-family: 'FreeMono', monospace;
+      }
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><img src="LOGO3.png" style="height: 300px;" width="500px;"></h1>
+    </div>
+    
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="recipe.html">Recipe</a>
+      <a href="About.html">About</a>
+      <a href="Contact us.html">Send Recipe</a>
+      <a href="Find.html" class="right">Search</a>
+    </div>
+
+    <div class="header2">
+        <h2 style="font-size:70px; font-family: Bellefair; text-align: center; font-weight: 200px; color:white; margin-top: 5px;" >Ginataang Alimasag</h2>
+    </div>
+
+
+    <div class="container">
+        <div class="image">
+          <img src="CRAB.jpg" style=" height:500px; width: 700px; margin-top: 10%; margin-left: 20%;">
+          <img src="opencrab.jpg" style=" height:500px; width: 700px; margin-top: 10%; margin-left: 20%;">
+        </div>
+        <div class="text">
+          <h1>Ginataang Alimasag (or alimango) are Crabs cooked in Coconut Milk with squash in it and make the dish savory and healthy.</h1>
+              <h1 style="text-align: center;">Ingredients</h1>
+                  
+          <ul>
+              <li style="font-size: large;">2 tablespoons cooking oil</li>
+              <li style="font-size: large;">5 cloves garlic, chopped</li>
+              <li style="font-size: large;">1 small red onion, chopped</li>
+              <li style="font-size: large;">1 cup coconut milk</li>
+              <li style="font-size: large;">1 tablespoons patis (fish sauce)</li>
+              <li style="font-size: large;">2 medium-sized blue crabs (alimasag), washed, cut in half</li>
+              <li style="font-size: large;">1/4 cup kalabasa (squash), peeled, cubed</li>
+              <li style="font-size: large;">1/4 cup okra, halved</li>
+              <li style="font-size: large;">2 pieces green finger chilies (siling pangsigang)</li>
+              <li style="font-size: large;">1/4 cup sitaw (string beans), cut into 3-inch lengths</li>
+              <li style="font-size: large;">salt</li>
+              <li style="font-size: large;">ground black pepper</li>
+          </ul>
+          
+          <h1 style="text-align: center;">Procedure</h1>
+      <p style="font-size: large;">Step 1: Heat cooking oil in a large pan. Add then saute onions and garlic until onions are translucent.</p> 
+      <p style="font-size: large;">Step 2: Add coconut milk and patis, and bring to a boil. Cook for 6 minutes.</p>
+      <p style="font-size: large;">Step 3: Add the crabs and cook for 5 minutes.</p>
+      <p style="font-size: large;">Step 4: Add the squash and okra. Simmer until vegetables are tender. (You may also add the green finger chili at this point.) Add the string beans.</p>  
+      <p style="font-size: large;">Step 5: Season it with salt and pepper.</p>
+      <p style="font-size: large;">Step 6: Serve and Satisfy your cravings!</p>    
+    
+  
+              
+        </div>
+      </div>
+
+
+<div class="footer">
+    <h2 style="color:lightslategrey; font-size: small;">copywrite foodblog website 2021-2022 all rights reserved craving's hub</h2>
+    
+  </div>
+  
+  <script>
+    window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  </body>
+  </html>

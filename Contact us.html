@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b45e3950fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Send Recipe</title>
+<style>
+* {
+  box-sizing:border-box;
+}
+
+body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(41, 39, 39);
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 900px;
+            height: 500px;
+            padding: 15px;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 0 15px grey;
+            /* background-color: gray; */
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+        }
+        
+        input {
+            width: 100%;
+            margin: 5px 0;
+            height: 35px;
+            font-size: 17px;
+            text-align: center;
+            outline: none;
+            border-radius: 15px;
+            border: none;
+            background: rgb(235, 228, 228);
+        }
+        
+        textarea {
+            width: 100%;
+            margin: 5px 0;
+            font-size: 17px;
+            text-align: center;
+            outline: none;
+            border-radius: 15px;
+            border: none;
+            background: rgb(235, 228, 228);
+        }
+        input:focus::placeholder {
+        color: transparent;
+      }
+        textarea:focus::placeholder {
+        color: transparent;
+      }
+        input[type=submit]{
+            margin: 10px auto;
+            width: 120px;
+            background: rgb(216, 31, 62);
+            color: white;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background: tomato;
+        }
+        .container11 {
+            padding: 64px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+
+        .column-66 {
+            float: left;
+            width: 66.66666%;
+            padding: 20px;
+        }
+
+        .column-33 {
+            float: left;
+            width: 33.33333%;
+            padding: 20px;
+            border: 20px grey;
+        }
+
+        #imgr {
+            border: 30px solid #666666;
+            border-radius: 4px;
+        }
+
+        .large-font {
+            font-size: 48px;
+        }
+
+        .xlarge-font {
+            font-size: 64px
+        }
+
+        @media screen and (max-width: 1000px) {
+            .column-66,
+            .column-33 {
+            width: 100%;
+            text-align: center;
+         }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1><img src="LOGO3.png" style="height: 300px;" width="500px;"></h1>
+</div>
+    
+<div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="recipe.html">Recipe</a>
+    <a href="About.html">About</a>
+    <a href="Contact us.html">Send Recipe</a>
+    <a href="Find.html" class="right">Find Recipe</a>
+</div>
+
+<div class="header2">
+    <h2 style="font-size:70px; font-family: Bellefair; text-align: center; font-weight: 200; color:white; margin-top: 5px;" >Contact Us</h2>
+    <p style="font-size:x-large; font-family: Bellefair; text-align: center; margin-right: 50px; margin-left:50px; margin-top: -3%; color:white;">Send your cravings recipe on us because sharing is caring.</p> 
+    </div>
+
+
+<div class="container11">
+    <div class="row">
+        <div class="container" style="margin-left: 17%;">
+            <h2>Send Recipe</h2>
+                <form action="" id="myForm">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <input type="text" name="email" id="email" placeholder=" Enter your email">
+                <textarea name="message" id="message" cols="30" rows="13" placeholder="Send your recipe here.."></textarea>
+                <input type="submit" value="Send">
+                </form>
+        </div>
+  </div>
+</div>
+
+<div class="container11" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="fb.png" alt="App" width="450" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Visit us</b></h1>
+      <h1 class="large-font" style="color:red;"><b>In our Social Media Account</b></h1>
+      <p><i class="fab fa-facebook-square" style="font-size:50px; margin-top: 0px; margin-left:15px;"></i><a href="https://www.facebook.com/cravingshub17" style="margin-left: 1%; margin-bottom: -3%;"> www.facebook.com/cravingshub17</a></p></article>
+      <p><i class="fab fa-instagram" style="font-size:50px; margin-top: 0px; margin-left:15px;"></i><a href="https://www.instagram.com/cravingshub17/" style="margin-left: 1%; margin-bottom: -3%;"> www.instagram.com/cravingshub17</a></p></article>
+      <p><i class="fab fa-twitter" style="font-size:50px; margin-top: 0px; margin-left:15px;"></i><a href="https://www.twitter.com/cravingshub17/" style="margin-left: 1%; margin-bottom: -3%;"> www.twitter.com/cravingshub17</a></p></article>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <h2 style="color:lightslategrey; font-size: small;">copywrite foodblog website 2021-2022 all rights reserved craving's hub</h2>
+  </div>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("user_DwzdSYYItsKoogynqIPjH");
+  })();
+</script>
+
+<script>
+  document
+  .getElementById("myForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      let name = document.getElementById("name").value;
+      const serviceID = "service_x6fnmp7";
+      const templateID = "template_h34a2it";
+
+      emailjs.sendForm(serviceID, templateID, this).then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("SUCCESS!");
+          myForm.forEach(myForm =>  myForm.value = '');
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          alert("FAILED...", error);
+        }
+      );
+    });
+</script>
+</body>
+</html>

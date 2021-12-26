@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Find Recipe</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #f1f1f1;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: 'Bellefair';
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+#foodsz {
+  max-width: 100%;
+  max-height: 100%;
+}
+h4 {
+  font-family: 'Segoe Print';
+  font-size: 25px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><img src="LOGO3.png" style="height: 300px;" width="500px;"></h1>
+</div>
+
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="recipe.html">Recipe</a>
+  <a href="About.html">About</a>
+  <a href="Contact us.html">Send Recipe</a>
+  <a href="Find.html" class="right">Find Recipe</a>
+</div>
+
+
+<div class="header2">
+  <h2 style="font-size:70px; font-family: Bellefair; text-align: center; font-weight: 200; color:white; margin-top: 5px;" >Recipe</h2>
+  <p style="font-size:x-large; font-family: Bellefair; text-align: center; margin-right: 50px; margin-left:50px; margin-top: -3%; color:white;"> Satisfy your cravings with cooking!</p> 
+</div>
+
+
+    <div id="myBtnContainer" style="margin-left:30%; margin-top:3%;">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('bf')">Breakfast</button>
+        <button class="btn" onclick="filterSelection('lnc')">Lunch</button>
+        <button class="btn" onclick="filterSelection('dnr')"> Dinner</button>
+        <button class="btn" onclick="filterSelection('snck')"> Snack</button>
+  </div>
+      
+      <!-- Portfolio Gallery Grid -->
+      <div class="row" id="myUL" style="text-align: center;">
+        <div class="column bf">
+          <div class="content">
+            <a href="Avocado.html"><img src="avo.jpg" alt="avo" id=foodsz></a>
+            <h4>Avocado Toast</h4>
+          </div>
+        </div>
+        <div class="column bf">
+          <div class="content">
+            <a href="pancake.html"><img src="Fluffy-Japanese-Pancakes-2.jpg" alt="pancake" id=foodsz></a>
+            <h4>Fluffy Pancake</h4>
+          </div>
+        </div>
+        <div class="column bf">
+          <div class="content">
+            <a href="eggbenedict.html"><img src="eggbenn.jpg" alt="eggben" id=foodsz></a>
+            <h4>Egg Benedict</h4>
+          </div>
+        </div>
+        
+        <div class="column lnc">
+          <div class="content">
+            <a href="Bulalo.html"><img src="Bulalo.jpg" alt="Bulalo" id=foodsz></a>
+            <h4>Bulalo</h4>
+          </div>
+        </div>
+        <div class="column lnc">
+          <div class="content">
+            <a href="Ginataang Alimasag.html"><img src="CRAB.jpg" alt="crab" id=foodsz></a>
+            <h4>Ginataang Alimasag</h4>
+          </div>
+        </div>
+        <div class="column lnc">
+          <div class="content">
+            <a href="Sizzling Sisig.html"><img src="Sizzling-Sisig-640.jpg" alt="sisg" id=foodsz></a>
+            <h4>Sizzling Sisig</h4>
+          </div>
+        </div>
+      
+        <div class="column dnr">
+          <div class="content">
+            <a href="Tuyo pasta.html"><img src="tuyo.jpg" alt="tuyo" id=foodsz></a>
+            <h4>Tuyo Pasta</h4>
+          </div>
+        </div>
+        <div class="column dnr">
+          <div class="content">
+            <a href="Sinigang.html"><img src="sinigang.png" alt="Sinigang" id=foodsz></a>
+            <h4>Pork Sinigang</h4>
+          </div>
+        </div>
+        <div class="column dnr">
+          <div class="content">
+            <a href="Chopsuey.html"><img src="ChopSuey (1).jpg" alt="chopsuey" id=foodsz></a>
+            <h4>Chopsuey</h4>
+          </div>
+        </div>
+
+        <div class="column snck">
+            <div class="content">
+              <a href="mini pizza.html"><img src="mini-pizzas-platter.jpg" alt="mini pizza" id=foodsz></a>
+              <h4>Mini Pizza Cheese Bacon</h4>
+            </div>
+          </div>
+          <div class="column snck">
+            <div class="content">
+              <a href="Corndog.html"><img src="koreancorndog.jpg" alt="corndog" id=foodsz></a>
+              <h4>Corn Dog</h4>
+            </div>
+          </div>
+          <div class="column snck">
+            <div class="content">
+              <a href="CheeseBurger.html"><img src="burger.jpg" alt="burger" id=foodsz></a>
+              <h4>Cheese Burger</h4>
+            </div>
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
+      
+      <!-- END MAIN -->
+
+    </div>
+</div>
+    
+<div class="footer">
+    <h2 style="color:lightslategrey; font-size: small;">copywrite foodblog website 2021-2022 all rights reserved craving's hub</h2>
+</div>
+
+  <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+   filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+  }
+}
+
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    </script>
+
+
+</body>
+</html>

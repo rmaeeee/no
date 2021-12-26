@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Egg Benedict</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+    
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 13px;
+        margin-left: 13%;
+        margin-right: 10%;
+        margin-top: 5%;
+        color:grey;
+        font-family: 'FreeMono', monospace;
+      }
+</style>
+</head>
+<body>
+
+    <div class="header">
+        <h1><img src="LOGO3.png" style="height: 300px;" width="500px;"></h1>
+    </div>
+    
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="recipe.html">Recipe</a>
+      <a href="About.html">About</a>
+      <a href="Contact us.html">Send Recipe</a>
+      <a href="Find.html" class="right">Search</a>
+    </div>
+
+    <div class="header2">
+        <h2 style="font-size:70px; font-family: Bellefair; text-align: center; font-weight: 200px; color:white; margin-top: 5px;" >Egg Benedict</h2>
+    </div>
+
+
+    <div class="container">
+        <div class="image">
+          <img src="eggben.jpg" style=" height:500px; width: 700px; margin-top: -10%; margin-left: 20%;">
+          <img src="hollandaise.jpg" style=" height:500px; width: 700px; margin-top: 10%; margin-left: 20%;">
+        </div>
+        <div class="text">
+          <h1> Eggs Benedict is a traditional American breakfast and brunch recipe that originated in New York City. It consists of an English muffin, cut in half, toasted, and topped with Canadian bacon, poached eggs, and classic French Hollandaise sauce. It's decadent, rich, and satisfying.</h1>
+              <h1 style="text-align: center;">Ingredients</h1>
+                  
+          <ul>
+              <li style="font-size: large;">8 slices bacon</li>
+              <li style="font-size: large;">4 large eggs</li>
+              <li style="font-size: large;">2 teaspoons white vinegar</li>
+              <li style="font-size: large;">2 English muffins</li>
+              <li style="font-size: large;">Butter</li>
+              <li style="font-size: large;">Hollandaise Sauce</li>
+              <li style="font-size: large;">10 tablespoons unsalted butter</li>
+              <li style="font-size: large;">3 large egg yolks</li>
+              <li style="font-size: large;">1 tablespoon lemon juice</li>
+              <li style="font-size: large;">1/2 teaspoon salt</li>
+          </ul>
+          
+          <h1 style="text-align: center;">Procedure</h1>
+      <p style="font-size: large;">Step 1: Cook the bacon on medium low heat until the bacon is browned on both sides.</p> 
+      <p style="font-size: large;">Step 2: While the bacon is cooking, bring a large saucepan two-thirds-filled with water to a boil, then add the vinegar. Bring the water to a boil again, then lower the heat to a bare simmer.</p>
+      <p style="font-size: large;">Step 3: Poach the eggs in the boiling water.</p>
+      <p style="font-size: large;">Step 4: Toast the English muffins in the toaster.</p>  
+      <p style="font-size: large;">Step 5: Make the Hollandaise sauce: To make blender Hollandaise, gently melt 10 tablespoons unsalted butter.
+        Put 3 egg yolks, a tablespoon of lemon juice, 1/2 teaspoon salt in a blender. Blend on medium to medium high speed for 30 full seconds (count or time it), until eggs lighten in color.
+        Turn the blender down to lowest setting, slowly dribble in the hot melted butter, while continuing to blend. Taste for salt and acidity and add more salt or lemon juice to taste.
+        Transfer it to a container you can use for pouring and set it on a warm—but not hot—place on or near the stovetop.</p>
+      <p style="font-size: large;">Step 6: Assemble the eggs Benedict: To assemble, butter one side of an English muffin. Top with 2 slices of bacon or 1 slice of Canadian bacon. You can trim the bacon to fit the muffin if you’d like.
+        Put a poached egg on top of the bacon, then pour some Hollandaise over.</p>
+      <p style="font-size: large;">Step 7: Serve and Satisfy your cravings!</p>    
+    
+  
+              
+        </div>
+      </div>
+
+
+
+<div class="footer">
+    <h2 style="color:lightslategrey; font-size: small;">copywrite foodblog website 2021-2022 all rights reserved craving's hub</h2>
+    
+  </div>
+  
+  <script>
+    window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  </body>
+  </html>

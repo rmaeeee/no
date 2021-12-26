@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cheese Burger</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+    
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 13px;
+        margin-left: 13%;
+        margin-right: 10%;
+        margin-top: 5%;
+        color:grey;
+        font-family: 'FreeMono', monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+        <h1><img src="LOGO3.png" style="height: 300px;" width="500px;"></h1>
+    </div>
+    
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="recipe.html">Recipe</a>
+      <a href="About.html">About</a>
+      <a href="Contact us.html">Send Recipe</a>
+      <a href="Find.html" class="right">Search</a>
+    </div>
+    
+
+    <div class="header2">
+        <h2 style="font-size:70px; font-family: Bellefair; text-align: center; font-weight: 200px; color:white; margin-top: 5px;" >Cheese Burger</h2>
+    </div>
+
+
+    <div class="container">
+        <div class="image">
+          <img src="burger.jpg" style=" height:500px; width: 700px; margin-top: -10%; margin-left: 20%;">
+          <img src="cookingpatty.jpg" style=" height:500px; width: 700px; margin-top: 10%; margin-left: 20%;">
+        </div>
+        <div class="text">
+          <h1>A cheeseburger is a hamburger topped with cheese. Traditionally, the slice of cheese is placed on top of the meat patty. The cheese is usually added to the cooking hamburger patty shortly before serving, which allows the cheese to melt. </h1>
+              <h1 style="text-align: center;">Ingredients</h1>
+                  
+          <ul>
+              <li style="font-size: large;">1 kilo ground beef</li>
+              <li style="font-size: large;">2 200-gram packs mozzarella cheese, sliced into 20 slices</li>
+              <li style="font-size: large;">4 burger buns, toasted</li>
+              <li style="font-size: large;">salt, to taste</li>
+              <li style="font-size: large;">ground black pepper, to taste</li>
+              <li style="font-size: large;">tomatoes, for serving</li>
+              <li style="font-size: large;">lettuce, for serving</li>
+          </ul>
+          
+          <h1 style="text-align: center;">Procedure</h1>
+      <p style="font-size: large;">Step 1: Divide ground beef into 4 portions (250 grams each). Divide each portion in half.</p> 
+      <p style="font-size: large;">Step 2: Using a small saucer slightly bigger than the burger bun, press a half portion of the beef into a layer. Season lightly with salt and ground pepper. </p>
+      <p style="font-size: large;">Step 3: Place about 2 mozzarella slices in the center. Season. Cover cheese with remaining half portion of beef, forming a patty with a slight depression in the middle. Season both sides. Repeat with remaining beef portions. Set aside, including the remaining slices of mozzarella.</p>
+      <p style="font-size: large;">Step 4: Preheat cast iron pan on medium-high. Place enough patties in the pan without crowding it. Sear the patties until browned on both sides, flipping only when the meat easily releases itself from the pan. Once flipped and browned, place leftover mozzarella slices on top, and cover to let cheese melt. </p>  
+      <p style="font-size: large;">Step 5: Remove from pan, and serve immediately in toasted burger buns with the toppings of your choice.</p>
+      <p style="font-size: large;">Step 6: Serve and Satisfy your cravings!</p>      
+  
+              
+        </div>
+      </div>
+
+
+
+</div>
+
+
+
+<div class="footer">
+    <h2 style="color:lightslategrey; font-size: small;">copywrite foodblog website 2021-2022 all rights reserved craving's hub</h2>
+    
+  </div>
+  
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    
+    </script>
+
+  </body>
+  </html>
